@@ -118,8 +118,7 @@ class StrategoGame:
         piece = self.board[row][col].cget("text")
         valid_moves = []
 
-        # Implement logic to get valid moves based on the piece type
-        # Example: If the piece is a Scout, it can move any number of tiles
+       
         if piece == "S":  # Scout
             for r in range(10):
                 for c in range(10):
@@ -158,7 +157,7 @@ class StrategoGame:
             attacker_piece = self.board[current_row][current_col].cget("text")
             defender_piece = self.board[row][col].cget("text")
 
-            # Implement logic to determine the winner of the attack based on the piece ranks
+           
             attacker_rank = self.get_piece_rank(attacker_piece)
             defender_rank = self.get_piece_rank(defender_piece)
 
@@ -176,11 +175,11 @@ class StrategoGame:
                 self.board[current_row][current_col]
 
     def switch_player_turn(self):
-        # Implementation for switching player turns goes here
+        
         pass
 
     def get_piece_rank(self, piece):
-        # Implementation for getting piece ranks goes here
+        
         pass
 
 if __name__ == "__main__":
